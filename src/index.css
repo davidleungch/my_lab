@@ -1,4 +1,3 @@
-/* Font Family */
 @import url('https://fonts.googleapis.com/css2?family=Noto+Serif:wght@400;700&display=swap');
 
 @tailwind base;
@@ -7,6 +6,10 @@
 
 @layer base {
   html{
-    font-family: Noto serif
+    scroll-behavior: smooth;
+  }
+  @font-face {
+    font-family: 'burtons';
+    src: url('/Burtons.otf') format('opentype');
   }
 }
