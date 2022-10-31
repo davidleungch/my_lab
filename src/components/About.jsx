@@ -1,28 +1,39 @@
+import { useEffect, useState } from "react";
+
 import { TypeAnimation } from "react-type-animation";
+import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 const About = ({ aboutRef }) => {
+  const [leetCodeStatus, setLeetCodeStatus] = useState();
+
+  useEffect(() => {}, []);
+
   return (
-    <div ref={aboutRef} className="min-h-screen font-noto-serif">
-      <h1>Hi, my name is David Leung</h1>
+    <div
+      ref={aboutRef}
+      className="min-h-screen font-noto-serif scroll-mt-20 text-center md:text-left "
+    >
+      <div className="text-5xl">Hi, my name is David Leung.</div>
       <TypeAnimation
         sequence={[
-          "I am a FrontEnd developer",
+          "I am a Frontend developer.",
           1000, // Waits 1s
-          "I am a problem solver",
+          "I am a problem solver.",
           1000, // Waits 1s
-          "I am a quick learner",
+          "I am a quick learner.",
           1000, // Waits 1s
         ]}
         speed={30}
         wrapper="div"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: "2em" }}
+        style={{ fontSize: "3em" }}
       />
-      <p>
-        I am still fresh in the software development. But I am capable to face
-        any challenges.
-      </p>
+      <div className="flex">
+        <AiFillGithub />
+        <AiFillLinkedin />
+        <AiOutlineMail />
+      </div>
     </div>
   );
 };

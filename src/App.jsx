@@ -21,14 +21,11 @@ function App() {
       />
       <div className="py-6 mb-12"></div>
       <About aboutRef={aboutRef} />
-      <div ref={worksRef} className="min-h-screen">
+      <div ref={worksRef} className="min-h-screen scroll-mt-20">
         this is the works content
       </div>
-      <div ref={resumeRef} className="min-h-screen">
+      <div ref={resumeRef} className="min-h-screen scroll-mt-20">
         this is the resume content
-      </div>
-      <div ref={contactRef} className="min-h-screen">
-        this is the contact content
       </div>
       <ScrollButton />
     </div>
