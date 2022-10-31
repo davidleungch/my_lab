@@ -1,34 +1,73 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import './App.css'
+import { useRef } from "react";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const aboutRef = useRef<HTMLLinkElement>(null);
+  const worksRef = useRef<HTMLLinkElement>(null);
+  const resumeRef = useRef<HTMLLinkElement>(null);
+  const contactRef = useRef<HTMLLinkElement>(null);
+
+  const executeScroll = (e: React.ChangeEvent<HTMLInputElement>) => {
+    let value: string = e.target.value;
+    switch (value) {
+      case "about":
+        if (aboutRef.current !== null) {
+          aboutRef.current.scrollIntoView();
+        }
+        break;
+      case "works":
+        if (worksRef.current !== null) {
+          worksRef.current.scrollIntoView();
+        }
+        break;
+      case "resume":
+        if (resumeRef.current !== null) {
+          resumeRef.current.scrollIntoView();
+        }
+        break;
+      case "contact":
+        if (contactRef.current !== null) {
+          contactRef.current.scrollIntoView();
+        }
+        break;
+    }
+  };
 
   return (
-    <div className="App">
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src="/vite.svg" className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://reactjs.org" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+    <div>
+      <nav className="flex justify-between">
+        <h1>CodeHub</h1>
+        <ul className="flex ">
+          <li>
+            <button
+              onClick={(e: React.ChangeEvent<HTMLInputElement>) => {
+                executeScroll(e);
+              }}
+              value={"about"}
+            >
+              About
+            </button>
+          </li>
+          <li>
+            <button>Works</button>
+          </li>
+          <li>Resume</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+      <div ref={aboutRef} className="md:min-h-screen">
+        this is the about content
       </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
+      <div ref={worksRef} className="md:min-h-screen">
+        this is the works content
       </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      <div ref={resumeRef} className="md:min-h-screen">
+        this is the resume content
+      </div>
+      <div ref={contactRef} className="md:min-h-screen">
+        this is the contact content
+      </div>
     </div>
-  )
+  );
 }
 
-export default App
+export default App;
