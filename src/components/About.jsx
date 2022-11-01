@@ -1,19 +1,13 @@
-import { useEffect, useState } from "react";
-
 import { TypeAnimation } from "react-type-animation";
 import { AiFillGithub, AiFillLinkedin, AiOutlineMail } from "react-icons/ai";
 
 const About = ({ aboutRef }) => {
-  const [leetCodeStatus, setLeetCodeStatus] = useState();
-
-  useEffect(() => {}, []);
-
   return (
     <div
       ref={aboutRef}
-      className="min-h-screen font-noto-serif scroll-mt-20 text-center md:text-left "
+      className="font-noto-serif pt-14 mt-20 scroll-m-28 text-center"
     >
-      <div className="text-5xl">Hi, my name is David Leung.</div>
+      <div className="text-xl md:text-5xl">Hi, my name is David Leung.</div>
       <TypeAnimation
         sequence={[
           "I am a Frontend developer.",
@@ -27,12 +21,26 @@ const About = ({ aboutRef }) => {
         wrapper="div"
         cursor={true}
         repeat={Infinity}
-        style={{ fontSize: "3em" }}
+        style={{ fontSize: "2em" }}
+        className="mt-5"
       />
-      <div className="flex">
-        <AiFillGithub />
-        <AiFillLinkedin />
-        <AiOutlineMail />
+
+      <div className="flex mt-5 justify-center">
+        <a href="https://github.com/davidleungch" target="_blank">
+          <AiFillGithub className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300" />
+        </a>
+        <a
+          href="https://www.linkedin.com/in/david-leung-9107a7188/"
+          target="_blank"
+        >
+          <AiFillLinkedin className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300" />
+        </a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&fs=1&to=davidleung.lch@gmail.com"
+          target="_blank"
+        >
+          <AiOutlineMail className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" />
+        </a>
       </div>
     </div>
   );
