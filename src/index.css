@@ -8,8 +8,4 @@
   html{
     scroll-behavior: smooth;
   }
-  @font-face {
-    font-family: 'burtons';
-    src: url('/Burtons.otf') format('opentype');
-  }
 }

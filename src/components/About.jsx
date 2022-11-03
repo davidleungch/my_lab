@@ -30,19 +30,19 @@ const About = ({ aboutRef }) => {
 
       <div className="flex mt-5 justify-center">
         <a href="https://github.com/davidleungch" target="_blank">
-          <AiFillGithub className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300" />
+          <AiFillGithub className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150  hover:translate-y-1 hover:scale-110 duration-300" />
         </a>
         <a
           href="https://www.linkedin.com/in/david-leung-9107a7188/"
           target="_blank"
         >
-          <AiFillLinkedin className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150  hover:-translate-y-1 hover:scale-110 duration-300" />
+          <AiFillLinkedin className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150  hover:translate-y-1 hover:scale-110 duration-300" />
         </a>
         <a
           href="https://mail.google.com/mail/?view=cm&fs=1&to=davidleung.lch@gmail.com"
           target="_blank"
         >
-          <AiOutlineMail className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" />
+          <AiOutlineMail className="mx-5 text-xl md:text-4xl cursor-pointer transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300" />
         </a>
       </div>
     </div>

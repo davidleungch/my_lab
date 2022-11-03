@@ -5,7 +5,6 @@ module.exports = {
     extend: {},
     fontFamily: {
       "noto-serif": ["noto-serif", "sans-serif"],
-      burtons: ["burtons", "sans-serif"],
     },
   },
   plugins: [],

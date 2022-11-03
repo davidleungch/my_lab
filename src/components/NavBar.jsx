@@ -51,7 +51,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
           return (
             <li
               key={index}
-              className="ml-8 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+              className="ml-8 transition ease-in-out delay-150 hover: translate-y-1 hover:scale-110 duration-300"
             >
               <button onClick={() => executeScroll(option)}>{option}</button>
             </li>
@@ -70,7 +70,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
             return (
               <li
                 key={index}
-                className="py-3 transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300"
+                className="py-3 transition ease-in-out delay-150 hover: translate-y-1 hover:scale-110 duration-300"
               >
                 <button onClick={() => executeScroll(option)}>{option}</button>
               </li>
