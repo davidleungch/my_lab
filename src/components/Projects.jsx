@@ -1,7 +1,10 @@
 const Projects = ({ projectsRef }) => {
   return (
-    <div ref={projectsRef} className="pt-14 mt-10 scroll-m-28 md:flex">
-      <div className="md:w-1/3 px-4 mx-2 text-left	shadow-lg p-10 rounded-xl my-10">
+    <div
+      ref={projectsRef}
+      className="pt-14 mt-10 scroll-m-26 md:flex font-noto-serif"
+    >
+      <div className="md:w-1/3 px-4 mx-2 text-left shadow-lg p-10 rounded-xl my-10">
         <h1 className="text-2xl md:text-3xl mb-2">
           Marketing Reach Rate System
         </h1>

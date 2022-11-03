@@ -7,7 +7,10 @@ const About = ({ aboutRef }) => {
       ref={aboutRef}
       className="font-noto-serif pt-14 mt-20 scroll-m-28 text-center"
     >
-      <div className="text-xl md:text-5xl">Hi, my name is David Leung.</div>
+      <div className="flex text-xl md:text-5xl justify-center">
+        <div>Hi, my name is</div>
+        <div className="ml-2 md:ml-3">David Leung.</div>
+      </div>
       <TypeAnimation
         sequence={[
           "I am a Frontend developer.",
