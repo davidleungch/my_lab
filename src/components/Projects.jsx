@@ -13,8 +13,8 @@ const Projects = ({ projectsRef }) => {
         </h1>
         <p className="text-left pt-3 h-32 text-lg md:text-xl">
           {" "}
-          A system can obtain massive data of the callback Urls of our products
-          and official website, number of keywords by crawling all the partner’s
+          A system can obtain massive data of different products, website and
+          apperances of thousands of keywords by crawling all the partner’s
           website
         </p>
         <GiSpiderBot className="text-5xl" />
