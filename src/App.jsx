@@ -5,7 +5,6 @@ import ScrollButton from "./components/ScrollButton";
 import NavBar from "./components/NavBar";
 import About from "./components/About";
 import Projects from "./components/Projects";
-import Resume from "./components/Resume";
 
 function App() {
   const aboutRef = useRef(null);
@@ -13,15 +12,14 @@ function App() {
   const resumeRef = useRef(null);
 
   return (
-    <div className="bg-white px-10 py-10">
+    <div className="bg-white px-10 py-5">
       <NavBar
         aboutRef={aboutRef}
         projectsRef={projectsRef}
         resumeRef={resumeRef}
       />
-      <About aboutRef={aboutRef} />
+      <About aboutRef={aboutRef} projectsRef={projectsRef} />
       <Projects projectsRef={projectsRef} />
-      <Resume resumeRef={resumeRef} />
       <ScrollButton />
     </div>
   );

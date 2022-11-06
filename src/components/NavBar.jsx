@@ -44,18 +44,37 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
   }, [wrapperRef]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-6 mb-12 bg-white z-10 font-noto-serif">
-      <BsFillMoonStarsFill className="cursor-pointer text-2xl transition ease-in-out delay-150 hover:-translate-y-1 hover:scale-110 duration-300" />
+    <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-8 bg-white z-10 font-noto-serif align-center">
+      <BsFillMoonStarsFill className="cursor-pointer text-2xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300" />
       <ul className="hidden md:flex items-center font-noto-serif">
         {options.map((option, index) => {
-          return (
-            <li
-              key={index}
-              className="ml-8 transition ease-in-out delay-150 hover: translate-y-1 hover:scale-110 duration-300"
-            >
-              <button onClick={() => executeScroll(option)}>{option}</button>
-            </li>
-          );
+          if (option != "Resume") {
+            return (
+              <li
+                key={index}
+                className="ml-8 p-0.5 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+              >
+                <button onClick={() => executeScroll(option)}>{option}</button>
+              </li>
+            );
+          } else {
+            return (
+              <li
+                key={index}
+                className="ml-8 p-0.5 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+              >
+                <a
+                  className={
+                    "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white"
+                  }
+                  href="/cv.pdf"
+                  download={"David_Leung_CV"}
+                >
+                  {option}
+                </a>
+              </li>
+            );
+          }
         })}
       </ul>
       <div onClick={handleNav} className="block md:hidden ml-8 cursor-pointer">
@@ -67,14 +86,35 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
           className="md:hidden fixed right-2 my-10 shadow-lg px-8 py-3 rounded-xl bg-white"
         >
           {options.map((option, index) => {
-            return (
-              <li
-                key={index}
-                className="py-3 transition ease-in-out delay-150 hover: translate-y-1 hover:scale-110 duration-300"
-              >
-                <button onClick={() => executeScroll(option)}>{option}</button>
-              </li>
-            );
+            if (option != "Resume") {
+              return (
+                <li
+                  key={index}
+                  className="py-3 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+                >
+                  <button onClick={() => executeScroll(option)}>
+                    {option}
+                  </button>
+                </li>
+              );
+            } else {
+              return (
+                <li
+                  key={index}
+                  className="py-3 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+                >
+                  <a
+                    className={
+                      "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white"
+                    }
+                    href="/cv.pdf"
+                    download={"David_Leung_CV"}
+                  >
+                    {option}
+                  </a>
+                </li>
+              );
+            }
           })}
         </ul>
       ) : null}
