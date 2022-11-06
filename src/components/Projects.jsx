@@ -26,18 +26,15 @@ const Projects = ({ projectsRef }) => {
   }, []);
 
   return (
-    <div
-      ref={projectsRef}
-      className="py-[100px] my-3 scroll-m-26 font-noto-serif"
-    >
-      <div className="xl:flex ">
-        <div className="px-2 xl:w-1/2 xl:pl-20 2xl:pl-52 js-show-on-scroll">
-          <div className="h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
-            <GiSpiderBot className="text-5xl" />
-            <h1 className="text-xl md:text-3xl my-2 text-center underline underline-offset-2">
+    <div ref={projectsRef} className="pt-[100px] pb-10 my-3 scroll-m-26">
+      <div className="xl:flex xl:mt-8 xl:items-center">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll ">
+          <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
+            <GiSpiderBot className="text-3xl md:text-5xl" />
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
               Marketing Reach Rate System
             </h1>
-            <p className="text-justify pt-2 px-7 text-md md:text-xl">
+            <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
               A system can obtain massive data of different products, website
               and apperances of thousands of keywords by crawling all the
@@ -45,16 +42,24 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="xl:w-1/2 xl:pl-5">IMG</div>
+        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center">
+          <div className="hover:translate-y-1 hover:scale-105 duration-300">
+            <img
+              className="object-contain"
+              src="/personal_website.png"
+              alt="personal_website"
+            />
+          </div>
+        </div>
       </div>
-      <div className="xl:flex flex-row-reverse">
-        <div className="xl:w-1/2 xl:pl-16 2xl:pl-44 js-show-on-scroll">
-          <div className="h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
-            <AiOutlineDeploymentUnit className="text-5xl" />
-            <h1 className="text-xl md:text-3xl my-2 text-center underline underline-offset-2">
+      <div className="xl:flex flex-row-reverse xl:mt-8 xl:items-center">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
+          <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
+            <AiOutlineDeploymentUnit className="text-3xl md:text-5xl" />
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
               Central Authorization System
             </h1>
-            <p className="text-justify pt-2 px-7 text-md md:text-xl">
+            <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
               A central authorization system is developed in order to manage the
               roles and actions of all the other systems and act as a
@@ -62,23 +67,39 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="xl:w-1/2">IMG</div>
+        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center">
+          <div className="hover:translate-y-1 hover:scale-105 duration-300">
+            <img
+              className="object-contain"
+              src="/personal_website.png"
+              alt="personal_website"
+            />
+          </div>
+        </div>
       </div>
-      <div className="xl:flex">
-        <div className="px-2 xl:w-1/2 xl:pl-20 2xl:pl-52 js-show-on-scroll">
-          <div className="h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
-            <AiOutlineGlobal className="text-5xl" />
-            <h1 className="text-xl md:text-3xl my-2 text-center underline underline-offset-2">
+      <div className="xl:flex xl:mt-8 xl:items-center">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll ">
+          <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
+            <AiOutlineGlobal className="text-3xl md:text-5xl" />
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
               Personal Profile Website
             </h1>
-            <p className="text-justify pt-2 px-7 text-md md:text-xl">
+            <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
               Create a personal profile to introduce myself and demonstrate my
               personality and skills.
             </p>
           </div>
         </div>
-        <div className="xl:w-1/2 xl:pl-5">IMG</div>
+        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center">
+          <div className="hover:translate-y-1 hover:scale-105 duration-300">
+            <img
+              className="object-contain"
+              src="/personal_website.png"
+              alt="personal_website"
+            />
+          </div>
+        </div>
       </div>
     </div>
   );

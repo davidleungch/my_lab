@@ -44,7 +44,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
   }, [wrapperRef]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-8 bg-white z-10 font-noto-serif align-center">
+    <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-8 bg-slate-50 z-10 align-center">
       <BsFillMoonStarsFill className="cursor-pointer text-2xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300" />
       <ul className="hidden md:flex items-center font-noto-serif">
         {options.map((option, index) => {
@@ -65,7 +65,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
               >
                 <a
                   className={
-                    "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white"
+                    "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700"
                   }
                   href="/cv.pdf"
                   download={"David_Leung_CV"}
@@ -83,7 +83,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
       {nav ? (
         <ul
           ref={wrapperRef}
-          className="md:hidden fixed right-2 my-10 shadow-lg px-8 py-3 rounded-xl bg-white"
+          className="md:hidden fixed right-2 my-10 shadow-lg px-8 py-3 rounded-xl bg-gray-100	"
         >
           {options.map((option, index) => {
             if (option != "Resume") {
@@ -105,7 +105,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
                 >
                   <a
                     className={
-                      "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white"
+                      "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700"
                     }
                     href="/cv.pdf"
                     download={"David_Leung_CV"}

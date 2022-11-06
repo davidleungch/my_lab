@@ -9,7 +9,7 @@ const About = ({ aboutRef, projectsRef }) => {
   return (
     <div
       ref={aboutRef}
-      className="font-noto-serif max-md:pt-28 md:pt-64 mt-20 scroll-m-28 text-center bg-black text-white"
+      className="max-md:pt-28 md:pt-64 mt-20 scroll-m-28 text-center bg-black text-white"
     >
       <div className="md:flex md:flex-row-reverse md:justify-around">
         <div>
@@ -31,7 +31,7 @@ const About = ({ aboutRef, projectsRef }) => {
             </div>
           </div>
           {rickRoll ? (
-            <div className="pt-3 text-sm">{"Enjoy the song ! :)"}</div>
+            <div className="pt-3 text-sm">{"Enjoy the song ! :))))))"}</div>
           ) : null}
         </div>
         <div className="pt-10 px-1 md:text-left">
@@ -39,7 +39,7 @@ const About = ({ aboutRef, projectsRef }) => {
           <div className="pt-3 text-3xl lg:text-5xl">DAVID LEUNG.</div>
           <TypeAnimation
             sequence={[
-              "A Frontend developer.",
+              "A frontend developer.",
               1000, // Waits 1s
               "A problem solver.",
               1000, // Waits 1s
