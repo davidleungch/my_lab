@@ -42,7 +42,7 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
+        <div className="border max-xl:mt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
           <div className="hover:translate-y-1 hover:scale-105 duration-300">
             <img
               className="object-contain"
@@ -52,7 +52,7 @@ const Projects = ({ projectsRef }) => {
           </div>
         </div>
       </div>
-      <div className="pt-8 xl:flex flex-row-reverse xl:mt-8 xl:items-center">
+      <div className="mt-8 xl:flex flex-row-reverse xl:mt-8 xl:items-center">
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineDeploymentUnit className="text-3xl md:text-5xl" />
@@ -67,7 +67,7 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
+        <div className="border max-xl:mt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
           <div className="hover:translate-y-1 hover:scale-105 duration-300">
             <img
               className="object-contain"
@@ -77,7 +77,7 @@ const Projects = ({ projectsRef }) => {
           </div>
         </div>
       </div>
-      <div className="pt-8 xl:flex xl:mt-8 xl:items-center">
+      <div className="mt-8 xl:flex xl:mt-8 xl:items-center">
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineGlobal className="text-3xl md:text-5xl" />
@@ -91,7 +91,7 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
+        <div className="border max-xl:mt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
           <div className="hover:translate-y-1 hover:scale-105 duration-300">
             <img
               className="object-contain"

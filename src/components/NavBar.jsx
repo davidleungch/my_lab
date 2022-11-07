@@ -65,7 +65,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
               >
                 <a
                   className={
-                    "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700"
+                    "outline outline-offset-2 outline-2 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700"
                   }
                   href="/cv.pdf"
                   download={"David_Leung_CV"}

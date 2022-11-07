@@ -35,11 +35,11 @@ const About = ({ aboutRef, projectsRef }) => {
           ) : null}
         </div>
         <div className="pt-10 px-1 md:text-left">
-          <div className="text-xl lg:text-3xl">HI, I AM</div>
-          <div className="pt-3 text-3xl lg:text-5xl">DAVID LEUNG.</div>
+          <div className="text-xl lg:text-3xl">Hi, I am</div>
+          <div className="pt-3 text-3xl lg:text-5xl">David Leung.</div>
           <TypeAnimation
             sequence={[
-              "A frontend developer.",
+              "A web developer.",
               1000, // Waits 1s
               "A problem solver.",
               1000, // Waits 1s
@@ -75,14 +75,14 @@ const About = ({ aboutRef, projectsRef }) => {
       <div className="pt-40 pb-4 md:pt-48">
         <div className="w-full flex justify-center">
           <div
-            className="w-48 cursor-pointer animate-bounce"
+            className="w-36 cursor-pointer animate-bounce outline outline-offset-2 outline-2 rounded "
             onClick={() => {
               projectsRef.current.scrollIntoView();
             }}
           >
-            <div className="text-xl w-48">Scroll down for more</div>
+            <div className="text-lg md:text-xl w-36">Scroll down</div>
             <div className="flex justify-center">
-              <IoIosArrowDown className="w-8 text-3xl" />
+              <IoIosArrowDown className="w-8 text-xl md:text-3xl" />
             </div>
           </div>
         </div>
