@@ -9,7 +9,7 @@ const About = ({ aboutRef, projectsRef }) => {
   return (
     <div
       ref={aboutRef}
-      className="max-md:pt-28 md:pt-64 mt-20 scroll-m-28 text-center bg-black text-white"
+      className="max-md:pt-28 md:pt-64 mt-20 scroll-m-28 text-center bg-black text-white dark:border"
     >
       <div className="md:flex md:flex-row-reverse md:justify-around">
         <div>
