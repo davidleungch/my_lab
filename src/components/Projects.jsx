@@ -28,7 +28,7 @@ const Projects = ({ projectsRef }) => {
   return (
     <div ref={projectsRef} className="pt-[100px] pb-10 my-3 scroll-m-26">
       <div className="xl:flex xl:mt-8 xl:items-center">
-        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll ">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <GiSpiderBot className="text-3xl md:text-5xl" />
             <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
@@ -42,18 +42,18 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center">
+        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
           <div className="hover:translate-y-1 hover:scale-105 duration-300">
             <img
               className="object-contain"
-              src="/personal_website.png"
-              alt="personal_website"
+              src="/marketing_scraping.png"
+              alt="marketing_scraping"
             />
           </div>
         </div>
       </div>
-      <div className="xl:flex flex-row-reverse xl:mt-8 xl:items-center">
-        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
+      <div className="pt-8 xl:flex flex-row-reverse xl:mt-8 xl:items-center">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineDeploymentUnit className="text-3xl md:text-5xl" />
             <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
@@ -67,18 +67,18 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center">
+        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
           <div className="hover:translate-y-1 hover:scale-105 duration-300">
             <img
               className="object-contain"
-              src="/personal_website.png"
-              alt="personal_website"
+              src="/central_authorization.png"
+              alt="central_authorization"
             />
           </div>
         </div>
       </div>
-      <div className="xl:flex xl:mt-8 xl:items-center">
-        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll ">
+      <div className="pt-8 xl:flex xl:mt-8 xl:items-center">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineGlobal className="text-3xl md:text-5xl" />
             <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
@@ -91,7 +91,7 @@ const Projects = ({ projectsRef }) => {
             </p>
           </div>
         </div>
-        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center">
+        <div className="pt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll">
           <div className="hover:translate-y-1 hover:scale-105 duration-300">
             <img
               className="object-contain"
