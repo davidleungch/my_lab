@@ -1,5 +1,5 @@
 //React
-import { useRef } from "react";
+import { useRef, useState } from "react";
 //Components
 import ScrollButton from "./components/ScrollButton";
 import NavBar from "./components/NavBar";
@@ -12,17 +12,23 @@ function App() {
   const projectsRef = useRef(null);
   const resumeRef = useRef(null);
 
+  const [darkMode, setDarkMode] = useState(false);
+
   return (
-    <div className="bg-slate-50 px-10 py-5 font-noto-serif">
-      <NavBar
-        aboutRef={aboutRef}
-        projectsRef={projectsRef}
-        resumeRef={resumeRef}
-      />
-      <About aboutRef={aboutRef} projectsRef={projectsRef} />
-      <Projects projectsRef={projectsRef} />
-      <Footer />
-      <ScrollButton />
+    <div className={darkMode ? "dark" : ""}>
+      <div className="bg-slate-50 px-10 py-5 font-noto-serif dark:bg-black dark:text-white">
+        <NavBar
+          aboutRef={aboutRef}
+          projectsRef={projectsRef}
+          resumeRef={resumeRef}
+          darkMode={darkMode}
+          setDarkMode={setDarkMode}
+        />
+        <About aboutRef={aboutRef} projectsRef={projectsRef} />
+        <Projects projectsRef={projectsRef} />
+        <Footer />
+        <ScrollButton />
+      </div>
     </div>
   );
 }

@@ -3,7 +3,13 @@ import { useState, useEffect, useRef } from "react";
 import { BsFillMoonStarsFill } from "react-icons/bs";
 import { AiOutlineClose, AiOutlineMenu } from "react-icons/ai";
 
-const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
+const NavBar = ({
+  aboutRef,
+  projectsRef,
+  resumeRef,
+  darkMode,
+  setDarkMode,
+}) => {
   const [nav, setNav] = useState(false);
   const wrapperRef = useRef(null);
 
@@ -44,8 +50,14 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
   }, [wrapperRef]);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-8 bg-slate-50 z-10 align-center">
-      <BsFillMoonStarsFill className="cursor-pointer text-2xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300" />
+    <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-8 bg-slate-50 z-10 align-center dark:bg-black">
+      <BsFillMoonStarsFill
+        onClick={() => {
+          console.log(darkMode);
+          setDarkMode(!darkMode);
+        }}
+        className="cursor-pointer text-2xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+      />
       <ul className="hidden md:flex items-center font-noto-serif">
         {options.map((option, index) => {
           if (option != "Resume") {
@@ -61,7 +73,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
             return (
               <li
                 key={index}
-                className="ml-8 p-0.5 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
+                className="ml-8 p-0.5 transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300 "
               >
                 <a
                   className={
@@ -83,7 +95,7 @@ const NavBar = ({ aboutRef, projectsRef, resumeRef }) => {
       {nav ? (
         <ul
           ref={wrapperRef}
-          className="md:hidden fixed right-2 my-10 shadow-lg px-8 py-3 rounded-xl bg-gray-100	"
+          className="md:hidden fixed right-2 my-10 shadow-lg px-8 py-3 rounded-xl bg-gray-100	dark:bg-slate-700	"
         >
           {options.map((option, index) => {
             if (option != "Resume") {
