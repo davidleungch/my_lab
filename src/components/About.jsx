@@ -9,7 +9,7 @@ const About = ({ aboutRef, projectsRef }) => {
   return (
     <div
       ref={aboutRef}
-      className="max-md:pt-32 md:pt-64 mt-20 scroll-m-28 text-center bg-black text-white dark:border"
+      className="max-md:pt-10 md:pt-64 mt-20 scroll-m-28 text-center bg-black text-white dark:border"
     >
       <div className="md:flex md:flex-row-reverse md:justify-around">
         <div>
@@ -72,7 +72,7 @@ const About = ({ aboutRef, projectsRef }) => {
           </div>
         </div>
       </div>
-      <div className="pt-40 pb-4 md:pt-48">
+      <div className="pt-20 pb-4 md:pt-48">
         <div className="w-full flex justify-center">
           <div
             className="w-36 cursor-pointer animate-bounce outline outline-offset-2 outline-2 rounded "

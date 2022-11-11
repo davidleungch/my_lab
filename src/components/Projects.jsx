@@ -28,7 +28,7 @@ const Projects = ({ projectsRef }) => {
 
   return (
     <div ref={projectsRef} className="pt-[100px] pb-10 my-3 scroll-m-26 ">
-      <div className="flex justify-center text-2xl md:text-3xl underline px-10 py-5">
+      <div className="flex justify-center text-xl md:text-3xl underline px-10 py-5">
         In-house Productions
       </div>
       <div className="xl:flex xl:mt-8 xl:items-center">
@@ -81,7 +81,7 @@ const Projects = ({ projectsRef }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-8 text-2xl md:text-3xl underline px-10 py-5">
+      <div className="flex justify-center mt-8 text-xl md:text-3xl underline px-10 py-5">
         Side Projects
       </div>
       <div className="xl:flex xl:mt-8 xl:items-center">
