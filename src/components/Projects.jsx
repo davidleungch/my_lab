@@ -27,14 +27,14 @@ const Projects = ({ projectsRef }) => {
 
   return (
     <div ref={projectsRef} className="pt-[100px] pb-10 my-3 scroll-m-26 ">
-      <div className="flex justify-center text-xl md:text-3xl underline px-10 py-5">
+      <div className="flex justify-center text-xl md:text-3xl underline underline-offset-8 px-10 py-5">
         In-house Productions
       </div>
       <div className="xl:flex xl:mt-8 xl:items-center">
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <GiSpiderBot className="text-3xl md:text-5xl" />
-            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-8">
               Marketing Reach Rate System
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
@@ -59,7 +59,7 @@ const Projects = ({ projectsRef }) => {
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineDeploymentUnit className="text-3xl md:text-5xl" />
-            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-8">
               Central Authorization System
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
@@ -80,22 +80,22 @@ const Projects = ({ projectsRef }) => {
           </div>
         </div>
       </div>
-      <div className="flex justify-center mt-8 text-xl md:text-3xl underline px-10 py-5">
+      <div className="flex justify-center mt-8 text-xl md:text-3xl underline underline-offset-8	px-10 py-5">
         Side Projects
       </div>
       <div className="xl:flex xl:mt-8 xl:items-center">
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <TbRobot className="text-3xl md:text-5xl" />
-            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-8">
               Ticket Bot
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
-              Automatic bot for getting concert ticket.
+              Automatic bot for getting concert ticket on HK ticketing.
             </p>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              Get it from:{" "}
+              Get it on:{" "}
               <a
                 href="https://github.com/davidleungch/ticket_bot"
                 className="text-blue-700 underline dark:text-yellow-500"
@@ -120,7 +120,7 @@ const Projects = ({ projectsRef }) => {
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineGlobal className="text-3xl md:text-5xl" />
-            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-8">
               Personal Profile Website
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
