@@ -37,12 +37,11 @@ const Projects = ({ projectsRef }) => {
             <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-8">
               Marketing Reach Rate System
             </h1>
-            <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              {" "}
+            <div className="text-justify pt-2 px-7 text-sm md:text-lg">
               By crawling 2,000+ partner's website, the system can obtain
               massive data of the callback Urls of our products and official
               website, number of keywords which can be done within 2 days.
-            </p>
+            </div>
           </div>
         </div>
         <div className="border max-xl:mt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll dark:border-gray-500">
@@ -63,7 +62,6 @@ const Projects = ({ projectsRef }) => {
               Central Authorization System
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              {" "}
               A central authorization system is developed in order to handle the
               rapidly growing systems and services. It can manage the roles and
               actions of the current 10+ systems and act as a middle-ware of the
@@ -92,12 +90,11 @@ const Projects = ({ projectsRef }) => {
               Ticket Bot
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              {" "}
               Automatic bot for getting concert ticket on HK ticketing. Captcha
               solving can also be handled
             </p>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              Get it on:{" "}
+              Check it on:{" "}
               <a
                 href="https://github.com/davidleungch/ticket_bot"
                 className="text-blue-700 underline dark:text-yellow-500"
@@ -126,7 +123,6 @@ const Projects = ({ projectsRef }) => {
               Personal Profile
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              {" "}
               A personal website to introduce myself and demonstrate my
               personality and skills.
             </p>
