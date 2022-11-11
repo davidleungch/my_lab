@@ -39,8 +39,9 @@ const Projects = ({ projectsRef }) => {
             </h1>
             <div className="text-justify pt-2 px-7 text-sm md:text-lg">
               By crawling 2,000+ partner's website, the system can obtain
-              massive data of the callback Urls of our products and official
-              website, number of keywords which can be done within 2 days.
+              massive data of the required keywords and callback Urls of our
+              products and official website. Thw whole process can be done
+              within 2 days.
             </div>
           </div>
         </div>
