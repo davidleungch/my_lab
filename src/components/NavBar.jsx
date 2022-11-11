@@ -76,7 +76,7 @@ const NavBar = ({
               >
                 <a
                   className={
-                    "outline outline-offset-2 outline-2 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700"
+                    "outline outline-offset-2 outline-2 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700 dark:hover:outline-white dark:hover:bg-white dark:hover:text-black"
                   }
                   href="/cv.pdf"
                   download={"David_Leung_CV"}
@@ -116,7 +116,7 @@ const NavBar = ({
                 >
                   <a
                     className={
-                      "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700"
+                      "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700 dark:hover:outline-white dark:hover:bg-white dark:hover:text-black"
                     }
                     href="/cv.pdf"
                     download={"David_Leung_CV"}
