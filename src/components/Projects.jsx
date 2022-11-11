@@ -40,7 +40,7 @@ const Projects = ({ projectsRef }) => {
             <div className="text-justify pt-2 px-7 text-sm md:text-lg">
               By crawling 2,000+ partner's website, the system can obtain
               massive data of the required keywords and the urls of our
-              products and official website. Thw whole process can be done
+              products and official website. The whole process can be done
               within 2 days.
             </div>
           </div>
