@@ -53,7 +53,6 @@ const NavBar = ({
     <nav className="fixed top-0 left-0 right-0 flex justify-end px-10 py-8 bg-slate-50 z-10 align-center dark:bg-black">
       <BsFillMoonStarsFill
         onClick={() => {
-          console.log(darkMode);
           setDarkMode(!darkMode);
         }}
         className="cursor-pointer text-2xl transition ease-in-out delay-150 hover:translate-y-1 hover:scale-110 duration-300"
