@@ -39,9 +39,8 @@ const Projects = ({ projectsRef }) => {
             </h1>
             <div className="text-justify pt-2 px-7 text-sm md:text-lg">
               By crawling 2,000+ partner's website, the system can obtain
-              massive data of the required keywords and the urls of our
-              products and official website. The whole process can be done
-              within 2 days.
+              massive data of the required keywords and the urls of our products
+              and official website. The whole process can be done within 2 days.
             </div>
           </div>
         </div>
@@ -124,8 +123,8 @@ const Projects = ({ projectsRef }) => {
               Personal Profile
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              A personal website to introduce myself and demonstrate my
-              personality and skills.
+              A signal page application website to introduce myself and
+              demonstrate my personality and skills.
             </p>
           </div>
         </div>
