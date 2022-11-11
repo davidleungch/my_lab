@@ -39,9 +39,10 @@ const Projects = ({ projectsRef }) => {
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
-              A system can obtain massive data of different products, website
-              and apperances of thousands of keywords by crawling all the
-              partner’s website
+              By crawling 2,000+ partner's website, the system can obtain
+              massive data of the callback Urls of our products and official
+              website, number of keywords which are requested by the marketing
+              team within 2 days.
             </p>
           </div>
         </div>
@@ -64,9 +65,10 @@ const Projects = ({ projectsRef }) => {
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
-              A central authorization system is developed in order to manage the
-              roles and actions of all the other systems and act as a
-              middle-ware of the authentication system.
+              A central authorization system is developed in order to handle the
+              rapidly growing systems and services. It can manage the roles and
+              actions of the current 10+ systems and act as a middle-ware of the
+              authentication system.
             </p>
           </div>
         </div>
@@ -92,7 +94,8 @@ const Projects = ({ projectsRef }) => {
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
-              Automatic bot for getting concert ticket on HK ticketing.
+              Automatic bot for getting concert ticket on HK ticketing. Captcha
+              solving can also be handled
             </p>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               Get it on:{" "}

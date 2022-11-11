@@ -79,7 +79,7 @@ const NavBar = ({
                     "outline outline-offset-2 outline-2 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700 dark:hover:outline-white dark:hover:bg-white dark:hover:text-black"
                   }
                   href="/cv.pdf"
-                  download={"David_Leung_CV"}
+                  download="David_Leung_CV"
                 >
                   {option}
                 </a>
@@ -119,7 +119,7 @@ const NavBar = ({
                       "outline outline-offset-2 outline-1 rounded hover:bg-[#333333] hover:text-white hover:outline-orange-700 dark:hover:outline-white dark:hover:bg-white dark:hover:text-black"
                     }
                     href="/cv.pdf"
-                    download={"David_Leung_CV"}
+                    download="David_Leung_CV"
                   >
                     {option}
                   </a>
