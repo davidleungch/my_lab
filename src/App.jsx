@@ -16,7 +16,7 @@ function App() {
 
   return (
     <div className={darkMode ? "dark" : ""}>
-      <div className="bg-slate-50 px-2 md:px-10 md:py-5 font-noto-serif dark:bg-black dark:text-white">
+      <div className="bg-slate-50 px-2 py-2 md:px-10 md:py-5 font-noto-serif dark:bg-black dark:text-white">
         <NavBar
           aboutRef={aboutRef}
           projectsRef={projectsRef}
