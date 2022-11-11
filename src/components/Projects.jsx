@@ -41,8 +41,7 @@ const Projects = ({ projectsRef }) => {
               {" "}
               By crawling 2,000+ partner's website, the system can obtain
               massive data of the callback Urls of our products and official
-              website, number of keywords which are requested by the marketing
-              team within 2 days.
+              website, number of keywords which can be done within 2 days.
             </p>
           </div>
         </div>
@@ -124,11 +123,11 @@ const Projects = ({ projectsRef }) => {
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineGlobal className="text-3xl md:text-5xl" />
             <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-8">
-              Personal Profile Website
+              Personal Profile
             </h1>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
               {" "}
-              Create a personal profile to introduce myself and demonstrate my
+              A personal website to introduce myself and demonstrate my
               personality and skills.
             </p>
           </div>
