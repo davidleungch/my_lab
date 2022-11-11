@@ -1,6 +1,7 @@
 import { useEffect } from "react";
 import { AiOutlineGlobal, AiOutlineDeploymentUnit } from "react-icons/ai";
 import { GiSpiderBot } from "react-icons/gi";
+import { TbRobot } from "react-icons/tb";
 
 const Projects = ({ projectsRef }) => {
   useEffect(() => {
@@ -27,6 +28,9 @@ const Projects = ({ projectsRef }) => {
 
   return (
     <div ref={projectsRef} className="pt-[100px] pb-10 my-3 scroll-m-26 ">
+      <div className="flex justify-center text-2xl md:text-3xl underline px-10 py-5">
+        In-house Productions
+      </div>
       <div className="xl:flex xl:mt-8 xl:items-center">
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
@@ -77,7 +81,43 @@ const Projects = ({ projectsRef }) => {
           </div>
         </div>
       </div>
-      <div className="mt-8 xl:flex xl:mt-8 xl:items-center">
+      <div className="flex justify-center mt-8 text-2xl md:text-3xl underline px-10 py-5">
+        Side Projects
+      </div>
+      <div className="xl:flex xl:mt-8 xl:items-center">
+        <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
+          <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
+            <TbRobot className="text-3xl md:text-5xl" />
+            <h1 className="text-lg md:text-2xl my-2 text-center underline underline-offset-2">
+              Ticket Bot
+            </h1>
+            <p className="text-justify pt-2 px-7 text-sm md:text-lg">
+              {" "}
+              Automatic bot for getting concert ticket.
+            </p>
+            <p className="text-justify pt-2 px-7 text-sm md:text-lg">
+              Get it from:{" "}
+              <a
+                href="https://github.com/davidleungch/ticket_bot"
+                className="text-blue-700 underline dark:text-yellow-500"
+                target="_blank"
+              >
+                Github
+              </a>
+            </p>
+          </div>
+        </div>
+        <div className="border max-xl:mt-8 xl:w-1/2 xl:flex xl:justify-center js-show-on-scroll dark:border-gray-500">
+          <div>
+            <img
+              className="object-contain"
+              src="/bot.gif"
+              alt="personal_website"
+            />
+          </div>
+        </div>
+      </div>
+      <div className="mt-8 xl:flex flex-row-reverse xl:mt-8 xl:items-center">
         <div className="px-2 xl:w-1/2 xl:flex xl:justify-center">
           <div className="border h-[300px] xl:w-[500px] xl:h-[400px] flex flex-col items-center justify-center shadow-lg rounded-xl hover:translate-y-1 hover:scale-105 duration-300 ">
             <AiOutlineGlobal className="text-3xl md:text-5xl" />
