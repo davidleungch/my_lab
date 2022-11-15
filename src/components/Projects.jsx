@@ -94,14 +94,14 @@ const Projects = ({ projectsRef }) => {
               solving can also be handled
             </p>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              Check it on:{" "}
-              <a
+              Check it on: Temporarily private for improvement
+              {/* <a
                 href="https://github.com/davidleungch/ticket_bot"
                 className="text-blue-700 underline dark:text-yellow-500"
                 target="_blank"
               >
                 Github
-              </a>
+              </a> */}
             </p>
           </div>
         </div>
