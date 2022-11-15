@@ -94,14 +94,17 @@ const Projects = ({ projectsRef }) => {
               solving can also be handled
             </p>
             <p className="text-justify pt-2 px-7 text-sm md:text-lg">
-              Check it on: Temporarily private for improvement
-              {/* <a
+              Check it on:{" "}
+              <a
                 href="https://github.com/davidleungch/ticket_bot"
-                className="text-blue-700 underline dark:text-yellow-500"
+                className="text-blue-700 line-through dark:text-yellow-500 pointer-events-none"
                 target="_blank"
               >
                 Github
-              </a> */}
+              </a>
+            </p>
+            <p className="text-red-600 text-sm dark:text-fuchsia-400">
+              ** Temporarily private for improvement **
             </p>
           </div>
         </div>
